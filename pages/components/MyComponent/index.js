@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../../../styles/MyComponent.module.css'
 import CardComponent from '../CardComponent'
-import { BsCodeSlash} from 'react-icons/bs'
+import { BsCodeSlash } from 'react-icons/bs'
 import { BiUser } from 'react-icons/bi'
 // import { HiOutlineCode } from 'react-icons/fa';
 
@@ -10,14 +10,12 @@ export default function MyComponent() {
   const props = [
     {
       title: 'Desafio Bud',
-      description: 'Confira o resultado do desafio do processo seletivo Bud - Junior Software Engineer.',
-      icon: <BsCodeSlash />,
+      icon: <BsCodeSlash size={40} />,
       route: '/sequence',
     },
     {
       title: 'Sobre mim',
-      description: '',
-      icon: <BiUser />,
+      icon: <BiUser size={40} />,
       route: '/about',
     },
   ]

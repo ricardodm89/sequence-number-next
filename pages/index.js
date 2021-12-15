@@ -12,12 +12,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div  className={styles.title}>Olá pessoal!</div>
+        <div className={styles.title}>Olá pessoal!</div>
 
         {/* <WelcomeComponent /> */}
 
         <p className={styles.description}>
-          Me chamo Ricardo Dias Martins, nesse projeto apresento resposta do desafio de programação
+          Me chamo Ricardo Dias Martins, nesse projeto apresento resposta do desafio de programação.
           {/* <code className={styles.code}>pages/index.js</code> */}
         </p>
 

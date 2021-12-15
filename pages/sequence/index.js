@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
-import { BiChevronRight} from 'react-icons/bi'
 import HeaderComponent from '../components/HeaderComponent'
-import styles from '../../styles/Sequence.module.css'
 import sequenceNumber from '../../utils/sequenceNumber'
+import styles from '../../styles/Sequence.module.css'
+import { removeSpecialCharactersMask } from '../helper'
+
 
 export default function Sequence() {
     const [number, setNumber] = React.useState('')
@@ -32,21 +33,23 @@ export default function Sequence() {
                 <div className={styles.card}>
                     <form onSubmit={onSubmit}>
                         <div className={styles.form}>
-                        <input
-                            className={styles.input}
-                            label='Number'
-                            value={number}
-                            type='text'
-                            placeholder='Digite um número'
-                            onChange={(e) => setNumber(e.target.value)}
-                        />
-                        <button className={styles.btn} type='submit'>Enviar</button>
+                            <input
+                                className={styles.input}
+                                label='Number'
+                                value={number}
+                                type='number'
+                                placeholder='Digite um número'
+                                onChange={(e) => setNumber(e.target.value)}
+                            />
+                            <button className={styles.btn} type='submit'>Enviar</button>
                         </div>
                     </form>
 
-                    <div className={styles.code}>
-                        <div className={styles.result}><BiChevronRight /><p>Entrada: {inputNumber}</p></div>
-                        <div className={styles.result}><BiChevronRight /><p>Saída: {sequenceResolved || 'Ainda não há sequência'}</p></div>
+                    <div className={styles.result}>
+                        {inputNumber || 'Entrada'}
+                    </div>
+                    <div className={styles.result}>
+                        {sequenceResolved || '...'}
                     </div>
                 </div>
 
