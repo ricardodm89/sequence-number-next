@@ -3,7 +3,6 @@ import Image from 'next/image'
 import HeaderComponent from '../components/HeaderComponent'
 import sequenceNumber from '../../utils/sequenceNumber'
 import styles from '../../styles/Sequence.module.css'
-import { removeSpecialCharactersMask } from '../helper'
 
 export default function Sequence() {
     const [number, setNumber] = React.useState('')
