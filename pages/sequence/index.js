@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
-import { BiArrowBack } from 'react-icons/bi';
+import HeaderComponent from '../components/HeaderComponent'
 import styles from '../../styles/Sequence.module.css'
 import sequenceNumber from '../../utils/sequenceNumber'
 
@@ -19,12 +18,7 @@ export default function Sequence() {
 
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-                <BiArrowBack size={28} />
-                <Link href='/'>
-                    <a>Voltar</a>
-                </Link>
-            </div>
+            <HeaderComponent />
             <div className={styles.main}>
                 <div className={styles.card}>
                     <Image
@@ -47,7 +41,7 @@ export default function Sequence() {
                         <button className={styles.btn} type='submit'>Enviar</button>
                     </form>
 
-                    <div className={styles.result}>
+                    <div className={styles.code}>
                         <p>Entrada: {inputNumber}</p>
                         <p>Saída: {sequenceResolved || 'Ainda não há sequência'}</p>
                     </div>

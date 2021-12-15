@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from '../../../styles/MyComponent.module.css'
 import CardComponent from '../CardComponent'
+import { BsCodeSlash} from 'react-icons/bs'
+import { BiUser } from 'react-icons/bi'
 // import { HiOutlineCode } from 'react-icons/fa';
 
 export default function MyComponent() {
@@ -9,13 +11,13 @@ export default function MyComponent() {
     {
       title: 'Desafio Bud',
       description: 'Veja o resultado do desafio do processo seletivo Bud - Junior Software Engineer.',
-      icon: 'icon 2',
+      icon: <BsCodeSlash />,
       route: '/sequence',
     },
     {
       title: 'Sobre mim',
       description: '',
-      icon: 'icon 2',
+      icon: <BiUser />,
       route: '/about',
     },
   ]

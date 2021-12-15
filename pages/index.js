@@ -16,7 +16,8 @@ export default function Home() {
         {/* <WelcomeComponent /> */}
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Olá pessoal!
+          Aqui está 
           <code className={styles.code}>pages/index.js</code>
         </p>
 
