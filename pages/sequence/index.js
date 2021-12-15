@@ -25,8 +25,8 @@ export default function Sequence() {
                     <Image
                         src="/assets/desafio.png"
                         alt="desafio"
-                        width={641}
-                        height={406}
+                        width={640}
+                        height={405}
                     />
                 </div>
                 <div className={styles.card}>
