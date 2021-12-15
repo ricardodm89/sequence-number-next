@@ -1,11 +1,10 @@
 import React from 'react'
-import styles from '../../../styles/MyComponent.module.css'
-import CardComponent from '../CardComponent'
 import { BsCodeSlash } from 'react-icons/bs'
 import { BiUser } from 'react-icons/bi'
-// import { HiOutlineCode } from 'react-icons/fa';
+import styles from '../../../styles/GridCardsComponent.module.css'
+import CardComponent from '../CardComponent'
 
-export default function MyComponent() {
+export default function GridCardsComponent() {
 
   const props = [
     {

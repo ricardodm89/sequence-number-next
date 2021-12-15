@@ -5,7 +5,6 @@ import sequenceNumber from '../../utils/sequenceNumber'
 import styles from '../../styles/Sequence.module.css'
 import { removeSpecialCharactersMask } from '../helper'
 
-
 export default function Sequence() {
     const [number, setNumber] = React.useState('')
     const [inputNumber, setInputNumber] = React.useState('')
@@ -52,9 +51,7 @@ export default function Sequence() {
                         {sequenceResolved || '...'}
                     </div>
                 </div>
-
             </div>
-
         </div >
     )
 }
