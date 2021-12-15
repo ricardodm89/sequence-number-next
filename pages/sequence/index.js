@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { BiChevronRight} from 'react-icons/bi'
 import HeaderComponent from '../components/HeaderComponent'
 import styles from '../../styles/Sequence.module.css'
 import sequenceNumber from '../../utils/sequenceNumber'
@@ -30,6 +31,7 @@ export default function Sequence() {
                 </div>
                 <div className={styles.card}>
                     <form onSubmit={onSubmit}>
+                        <div className={styles.form}>
                         <input
                             className={styles.input}
                             label='Number'
@@ -39,11 +41,12 @@ export default function Sequence() {
                             onChange={(e) => setNumber(e.target.value)}
                         />
                         <button className={styles.btn} type='submit'>Enviar</button>
+                        </div>
                     </form>
 
                     <div className={styles.code}>
-                        <p>Entrada: {inputNumber}</p>
-                        <p>Saída: {sequenceResolved || 'Ainda não há sequência'}</p>
+                        <div className={styles.result}><BiChevronRight /><p>Entrada: {inputNumber}</p></div>
+                        <div className={styles.result}><BiChevronRight /><p>Saída: {sequenceResolved || 'Ainda não há sequência'}</p></div>
                     </div>
                 </div>
 

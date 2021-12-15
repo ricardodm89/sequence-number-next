@@ -10,7 +10,7 @@ export default function MyComponent() {
   const props = [
     {
       title: 'Desafio Bud',
-      description: 'Veja o resultado do desafio do processo seletivo Bud - Junior Software Engineer.',
+      description: 'Confira o resultado do desafio do processo seletivo Bud - Junior Software Engineer.',
       icon: <BsCodeSlash />,
       route: '/sequence',
     },
@@ -31,9 +31,5 @@ export default function MyComponent() {
       ))}
     </>
   )
-
-
-
-
 
 }
