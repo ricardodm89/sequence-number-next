@@ -8,8 +8,47 @@
     flex-direction: column;
   }
 
-  .linkedin{
-    border: 1px solid;
-    
+  .main {
+    padding: 4rem 0;
+    max-width: 640px;
+  }
 
+  .text{
+    margin-left: 5px;
+  }
+
+  .linkedin {
+    display: flex;
+    flex: 1;
+    font-weight: 500;
+    color: #fff;
+    background-color: #054f77;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 4px;
+    border-radius: 3px;
+  }
+
+  .git {
+    display: flex;
+    flex: 1;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 4px;
+    border-radius: 3px;
+  }
+
+  .mail {
+    display: flex;
+    flex: 1;
+    font-weight: 500;
+    color: #fff;
+    background-color: #db4a39;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 4px;
+    border-radius: 3px;
   }

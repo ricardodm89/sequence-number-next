@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../../../styles/CardComponent.module.css'
 
-export default function CardComponent({ title, description, icon, route }) {
+export default function CardComponent({ title, icon, route }) {
   return (
     <>
       <a href={route} className={styles.card}>
