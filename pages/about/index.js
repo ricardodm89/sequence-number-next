@@ -12,24 +12,23 @@ export default function About() {
       <div className={styles.main}>
         <div>
           <a target="_blank" href='https://www.linkedin.com/in/ricardo-dias-martins-b8b27240/' className={styles.linkedin} rel="noreferrer" >
-            <IoLogoLinkedin size={28} />
+            <IoLogoLinkedin size={26} />
             <div className={styles.text}>Ricardo Dias Martins</div>
           </a>
         </div>
         <div>
-          <a target="_blank" href='https://github.com/ricardodm89' className={styles.git} rel="noreferrer" >
-            <FaGitAlt size={28} />
+          <a target="_blank" href='https://github.com/ricardodm89/sequence-number-next' className={styles.git} rel="noreferrer" >
+            <FaGitAlt size={26} />
             <div className={styles.text}>\ricardodm89</div>
           </a>
         </div>
         <div>
           <a target="_blank" href='mailto:ricado89@gmailcom' className={styles.mail} rel="noreferrer">
-            <MdOutlineAlternateEmail size={28} />
+            <MdOutlineAlternateEmail size={26} />
             <div className={styles.text}>ricado89@gmail.com</div>
           </a>
         </div>
       </div>
-
     </div>
   )
 }

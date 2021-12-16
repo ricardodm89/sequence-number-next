@@ -42,15 +42,14 @@ export default function Sequence() {
                             <button className={styles.btn} type='submit'>Enviar</button>
                         </div>
                     </form>
-
                     <div className={styles.result}>
                         {inputNumber || 'Entrada'}
                     </div>
                     <div className={styles.result}>
-                        {sequenceResolved || '...'}
+                        {sequenceResolved || '. . .'}
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }

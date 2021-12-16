@@ -23,7 +23,7 @@ export default function GridCardsComponent() {
     <>
       {props.map((e, i) => (
         <div key={i} className={styles.grid}>
-          <CardComponent title={e.title} description={e.description} icon={e.icon} route={e.route} />
+          <CardComponent title={e.title} icon={e.icon} route={e.route} />
         </div>
       ))}
     </>
